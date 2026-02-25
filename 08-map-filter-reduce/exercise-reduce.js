@@ -4,8 +4,6 @@ let products = [
 ];
 
 
-let total = products.reduce((acumulator, products) => {
-    return acumulator + products.price;
-}, 0);
+let total = products.reduce((acc, p) => acc + p.price, 0);
 
 console.log(`O total que temos no estoque é de ${total}`);
