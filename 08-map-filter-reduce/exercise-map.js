@@ -1,13 +1,13 @@
-let produtos = [
+let products = [
     { name: "Mouse", price: 50 },
     { name: "Monitor", price: 800 }
 ];
 
 
-let novosProdutos = produtos.map(p => ({
-    ...produtos,
+let newProducts = products.map(p => ({
+    ...p,
     price: p.price + (p.price * 0.2)
 }));
 
 
-console.log(novosProdutos);
+console.log(newProducts);
